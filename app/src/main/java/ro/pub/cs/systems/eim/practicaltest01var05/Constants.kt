@@ -1,0 +1,20 @@
+package ro.pub.cs.systems.eim.practicaltest01var05
+
+
+object Constants {
+    const val INPUT1 = "input1"
+    const val INPUT2 = "input2"
+    const val SLEEP_TIME = 1000L
+    const val BROADCAST_RECEIVER_EXTRA = "broadcast_receiver_extra"
+
+    const val BROADCAST_RECEIVER_TAG = "[Message]"
+    const val PROCESSING_THREAD_TAG = "[Processing Thread]"
+
+
+    val actionTypes = arrayOf(
+        "ro.pub.cs.systems.eim.practicaltest01var05.arithmeticmean",
+        "ro.pub.cs.systems.eim.practicaltest01var05.geometricmean"
+    )
+
+    const val NUMBER_OF_CLICKS_THRESHOLD = 5
+}

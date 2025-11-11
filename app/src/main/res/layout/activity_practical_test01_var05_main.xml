@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".PracticalTest01Var05MainActivity">
+
+    <Button
+        android:id="@+id/activitate_secundara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="right"
+        android:text="NAVIGATE TO SECOND ACTIVITY" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="48dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/topleft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:ems="6"
+            android:gravity="center"
+            android:text="TOP LEFT" />
+
+        <Button
+            android:id="@+id/topright"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:ems="6"
+            android:gravity="center"
+            android:text="TOP RIGHT" />
+
+        <Button
+            android:id="@+id/center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:ems="6"
+            android:gravity="center"
+            android:text="CENTER" />
+
+        <Button
+            android:id="@+id/bottomleft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:ems="6"
+            android:gravity="center"
+            android:text="BOTTOM LEFT" />
+
+        <Button
+            android:id="@+id/bottomright"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:ems="6"
+            android:gravity="center"
+            android:text="BOTTOM RIGHT" />
+
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/afisare_butoane_apasate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:saveEnabled="true"
+        android:text="Top Left,Top Right,Center,Bottom Left,Bottom Right" />
+
+    <EditText
+        android:id="@+id/numar_apasare_butoane"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:saveEnabled="true"
+        android:text="0" />
+
+</LinearLayout>
